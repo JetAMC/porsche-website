@@ -55,8 +55,13 @@ body {
 }
 
 .main_screen {
-  height: 700px;
+  height: 800px;
   background: url("../images/porsch432e-zoom2.jpg") no-repeat center;
   background-size: cover;
+}
+
+.main_screen__title {
+  font-size: 20px;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
