@@ -81,7 +81,7 @@ button {
 }
 
 .main_screen__shadow {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0);
   height: 100%;
 }
 
@@ -92,14 +92,17 @@ button {
 }
 
 .main_screen__title {
-  padding-top: 80px;
-  margin-bottom: 10px;
+  padding-top: 60px;
 }
 
 .main_screen__title h1 {
   font-size: 45px;
   color: #fff;
   font-family: Special-Bold, sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  max-width: 850px;
+  width: 100%;
 }
 
 .main_screen__small-title {
@@ -112,5 +115,7 @@ button {
   font-family: Special-Thin, sans-serif;
   max-width: 850px;
   width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

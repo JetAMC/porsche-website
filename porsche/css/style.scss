@@ -69,7 +69,7 @@ button {
 }
 
 .main_screen__shadow {
-    background: rgba(0,0,0, 0.6);
+    background: rgba(0,0,0, 0.0);
     height: 100%;
 }
 
@@ -80,12 +80,16 @@ button {
 }
 
 .main_screen__title {
-    padding-top: 80px;
-    margin-bottom: 10px;
+    padding-top: 60px;
+    // margin-bottom: 10px;
     h1 {
         font-size: 45px;
         color: #fff;
         font-family: $boldFont;
+        background: rgba(0,0,0, 0.6);
+        padding: 10px;
+        max-width: 850px;
+        width: 100%;
     }
 }
 
@@ -97,6 +101,8 @@ button {
         font-family: $thinFont;
         max-width: 850px;
         width: 100%;
+        background: rgba(0,0,0, 0.6);
+        padding: 10px;
     }
 }
 
