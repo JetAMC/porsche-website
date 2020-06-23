@@ -1,16 +1,40 @@
+@import "variables.scss";
+
 * {
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: Special; /* Гарнитура шрифта */
+    font-family: Special-Thin; /* Гарнитура шрифта */
     src: url(fonts/PorscheNextTT-Thin.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Special-Regular; /* Гарнитура шрифта */
+    src: url(fonts/PorscheNextTT-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Special-Bold; /* Гарнитура шрифта */
+    src: url(fonts/PorscheNextTT-Bold.ttf); /* Путь к файлу со шрифтом */
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Special, sans-serif;
+    font-family: $thinFont;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -24,23 +48,29 @@ body {
     img {
         width: 150px;
     }
-    button {
-        border: 0;
-        border-radius: 50px;
-        padding: 10px 15px;
-        background: #d5001c;
-        color: #fff;
-        cursor: pointer;
-        font-size: 20px;
-        outline: 0;
-        font-family: Special, sans-serif;
-    }
+}
+
+button {
+    border: 0;
+    border-radius: 50px;
+    padding: 10px 15px;
+    background: #d5001c;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    outline: 0;
+    font-family: $regularFont;
 }
 
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.main_screen__shadow {
+    background: rgba(0,0,0, 0.6);
+    height: 100%;
 }
 
 .main_screen {
@@ -50,6 +80,26 @@ body {
 }
 
 .main_screen__title {
-    font-size: 20px;
-    color: #fff;
+    padding-top: 80px;
+    margin-bottom: 10px;
+    h1 {
+        font-size: 45px;
+        color: #fff;
+        font-family: $boldFont;
+    }
+}
+
+.main_screen__small-title {
+    margin-bottom: 10px;
+    h2 {
+        font-size: 30px;
+        color: #fff;
+        font-family: $thinFont;
+        max-width: 850px;
+        width: 100%;
+    }
+}
+
+.main_screen__button {
+
 }
